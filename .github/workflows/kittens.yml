@@ -11,6 +11,9 @@ on:
 jobs:
   send-message:
     runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
 
     steps:
     - name: Send kittens on issue/PR close
